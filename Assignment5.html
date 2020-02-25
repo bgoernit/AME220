@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<style>
+
+body{
+  background-color: #9DDEE2
+}
+
+img{
+  display: block;
+  height: 300px;
+  margin: auto;
+  padding: 20px 20px 20px 20px;
+  border-style: solid;
+  border-color: #1C2020;
+  }
+
+button{
+  text-align: center;
+  font-size: 26px;
+  background-color: #F4FAFA;
+  color: #010505;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 3px solid #B2CBCC;
+  max-width: 300px;
+  margin: auto;
+}
+button:hover{
+  background-color: #8A9899;
+  color: white;
+  transition: background-color 0.6s ease;
+}
+  </style>
+
+  <body>
+    <div class="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg" id="image1">
+    <button onclick="function1()"> 1 </button>
+    <button onclick="function2()"> 2 </button>
+    <button onclick="function3()"> 3 </button>
+  </div>
+
+  </body>
+
+    <script>
+      var slideShow = document.getElementById('image1');
+      var imgs = [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg"
+      ];
+
+      function function1() {
+        slideShow.setAttribute("src", imgs[0]);
+      }
+      function function2() {
+        slideShow.setAttribute("src", imgs[1]);
+      }
+      function function3() {
+        slideShow.setAttribute("src", imgs[2]);
+      }
+
+      </script>
+</html>
