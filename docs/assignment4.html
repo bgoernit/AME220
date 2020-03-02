@@ -1,0 +1,192 @@
+<!DoCTypE html>
+  <html>
+  <head>
+
+    <style>
+    header {
+      background-color: #A8324A;
+      padding: 20px;
+      text-align: left;
+      color: white;
+    }
+    font-family: Helviteca,Arial,Sans-serif
+    table {
+      font-family: arial,sans-serif;
+      width: 65%;
+      margin-left: 15%
+      margin-right: 15%
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+
+    td, th {
+      text-align: left;
+      font-size: 20px;
+
+    }
+    tr {
+      text align: left;
+      font-size: 20px;
+
+    }
+    h1, h2 {
+    	margin: 1em 0 0 0;
+    	text-align: center;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+    }
+    h2 {
+      font-size: 25px;
+    	margin: 0 0 1em 0;
+
+
+    }
+    ul {
+    list-style-type:disc
+  }
+
+  li {
+    font-weight: heavy;
+    font-size: 25px;
+  }
+    #container {
+        margin: 20px auto;
+        height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+    #accordion input {
+    	display: none;
+    }
+
+
+    #accordion label {
+    	background: #C47C83;
+    	border-radius: .25em;
+    	cursor: pointer;
+    	display: block;
+    	margin-bottom: .125em;
+    	padding: .25em 1em;
+      font-size: 20px;
+    	z-index: 20;
+    }
+    #accordion label:hover {
+    	background: #897173;
+    }
+
+    #accordion input:checked + label {
+    	background: #897173;
+    	border-bottom-right-radius: 0;
+    	border-bottom-left-radius: 0;
+    	color: white;
+    	margin-bottom: 0;
+    }
+    #accordion article {
+    	background: #FFE3E7;
+    	height:0px;
+    	overflow:hidden;
+      text-align: left;
+    	z-index:10;
+    }
+    #accordion article p {
+    	padding: 1em;
+    }
+    #accordion input:checked article {
+    }
+    #accordion input:checked ~ article {
+    	border-bottom-left-radius: .25em;
+    	border-bottom-right-radius: .25em;
+    	height: auto;
+    	margin-bottom: .125em;
+    }
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+    </style>
+
+
+    <body>
+	<div id="container">
+		<header>
+			<h1>Brisa Goernitz</h1>
+      <h2> <p><img src="https://i.kym-cdn.com/photos/images/original/001/322/126/0f2.jpg"></h2>
+			<h2>
+            <p style="text-align:center;"> Email:
+          <a href="mailto:brisa.goernitz@asu.edu"> brisa.goernitz@asu.edu </a>
+            &nbsp&nbsp |  &nbsp&nbsp Telephone:
+            <a href="4805225931">(480)522-5931 </a>
+            &nbsp&nbsp | &nbsp&nbsp Address:
+            <a href="https://goo.gl/maps/VJ86S5h2PiA7e9Ct9">5650 South Kyrene Rd. #1315, Tempe, AZ 85283 </a></p>
+</h2>
+		</header>
+		<section id="accordion">
+			<div>
+				<input type="checkbox" id="education" />
+				<label for="education">Education</label>
+				<article>
+          <table>
+          <tr>
+              <th>Bachelor of Science, Marketing</th>
+              <th>December 2020</th>
+          </tr>
+          <tr>
+              <td>W.P. Carey School of Business, Arizona State University, Tempe, AZ</td>
+              <td>GPA 4.0</td>
+          </tr>
+          <tr>
+            <td>Dean's List 4 years</td>
+          </tr>
+      </table>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="Obj" />
+				<label for="Obj">Resume Objective</label>
+				<article>
+          <p> I am a hardworking, driven student seeking opportunities in public relations. I work effectively in groups by using communication skills that build relationships and encourages participation. My knowledge in digital office software allows me to use the programs at their full potential to create media that clearly presents information to the intended audience. I am highly focused and detailed oriented, allowing me to complete the necessary task in an efficient manner while maintaining consistent results.
+          </p>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="Work Experience" />
+				<label for="Work Experience">Work Experience</label>
+				<article>
+          <p>
+        <ol>
+          <li>Private Math Tutor, Phoenix, AZ</li>
+            <p><b><i>Phoenix, AZ / June 2017 – July 2017</i></b><br>
+            Helped student develop and meet both short-term and long-term academic goals <br>
+            Collaborated with the student to develop a schedule that ensured they were able to
+            meet their academic goals while balancing other extracurricular duties</p>
+          <li>Dog Sitter/House Sitter, Phoenix, AZ</li>
+            <p><b><i>Phoenix, AZ 	June 2016 - July 2019</i></b><br>
+            Administered appropriate care to each pet following the owner’s instructions along
+            with provided overnight care to the pets<br>
+            Ensured that owner’s house was kept to their standards</p>
+          <li>Realtor Office Assistant, Phoenix, AZ</li>
+            <p><b><i>Phoenix, AZ / June 2019 - Present</i></b><br>
+            Compiled billing information into excel sheets for auditing and tracking purposes<br>
+            Responsible for clerical activities such as creating expense reports and organizing records</p>
+        </ol>
+      </p>
+				</article>
+			</div>
+      <div>
+				<input type="checkbox" id="ref" />
+				<label for="ref">References</label>
+				<article>
+          <ul>
+              <li> Jennifer Smith, Realtor assisted</li>
+                <p> (123)456-7890, jen@northandco.com </p>
+            </ul>				</article>
+			</div>
+		</section>
+  </div>
+</body>
+</html>
